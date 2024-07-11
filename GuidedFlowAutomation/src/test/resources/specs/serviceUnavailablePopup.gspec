@@ -1,0 +1,9 @@
+
+    #WM Service Unavailable Popup image comparison
+    = Service Unavailable Popup =
+      #This is for Desktop
+       @on desktop
+
+           #Check Service Container properties
+           menu_item-1:
+               image file specs/serviceUnavailable.png, error 12px

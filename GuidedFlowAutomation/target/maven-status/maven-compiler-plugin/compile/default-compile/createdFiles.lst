@@ -1,0 +1,11 @@
+com\wm\guidedflow\devtoolspoc\ConsoleLogsCapture.class
+com\wm\guidedflow\devtoolspoc\NetworkMocking.class
+com\wm\guidedflow\devtoolspoc\NetworkFailedRequest.class
+com\wm\guidedflow\devtoolspoc\NetworkSpeed.class
+com\wm\guidedflow\pages\ResidentialPages.class
+com\wm\guidedflow\devtoolspoc\BasicAuthentication.class
+com\wm\guidedflow\devtoolspoc\MobileEmulatorTest.class
+com\wm\guidedflow\devtoolspoc\NetworkLogActivity.class
+com\wm\guidedflow\devtoolspoc\BlockNetworkRequests.class
+com\wm\guidedflow\devtoolspoc\CdpCommandsTest.class
+com\wm\guidedflow\devtoolspoc\SetGeoLocation.class

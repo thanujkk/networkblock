@@ -1,0 +1,32 @@
+    #Declaring objects with css and xpath locators
+    @objects
+      header               css     div.site-header
+      sw-logo              css     div.site-logo
+      #Navigation links are multi-line object type. Thus, we add * at the end of its decleration.
+      navigation-links-*   xpath   //ul[@id='menu-main']/li[not((contains(@id,'mobile-menu-item')))]
+      nav-menu             css     div.fusion-secondary-main-menu
+      follow-us-box        xpath   //div[contains(@class,'fusion-alert')][1]
+    #Home Page Tag
+    = Home Page =
+      #This is for Desktop
+       @on desktop
+           #Header properties
+           header:
+               inside screen 0px top
+               inside screen 0px left
+               inside screen 0px right
+           #Logo properties
+           sw-logo:
+               #31 px below the header
+               below header 31px
+               #Image comparison with %2 precision ratio
+               image file sw-logo.png, error %5
+
+           #Each navigation links must be alligned horizontally to each other
+           #itemName -> Current item and nextItem -> Next item
+           @forEach [navigation-links-*] as itemName, next as nextItem
+               ${itemName}:
+                   aligned horizontally all ${nextItem}
+           #Navigation menu must be 20px above to the follow us allert box
+           nav-menu:
+               above follow-us-box 20px

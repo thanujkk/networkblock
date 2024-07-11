@@ -1,0 +1,52 @@
+    #Declaring objects with css and xpath locators
+    @objects
+
+      wm-logo                       xpath        //img[@class='footer-logo'][@alt='Waste Management Logo']
+      header-text                   xpath        //h1[contains(text(),'Residential Trash & Recycling Pickup')]
+      check-service-container       css          div.css-xpg47l-addressBarMobile
+      check-service-text            xpath        //div/h4[contains(text(), 'Check service availability')]
+      #address-bar-container         css          div.geosuggest-container
+      address-bar                   css          input.geosuggest__input
+      check-availability-button     xpath        //button[text()='Check Availability']
+
+
+    #WM Residential Home Page Tag
+    = Residential Home Page =
+      #This is for Desktop
+       @on desktop
+
+           #Check Service Container properties
+           check-service-container:
+                inside screen 479px top
+                inside screen 70px left
+                inside screen 70px right
+                width 1140px
+                height 203px
+                #color-scheme "#FFFFFF"
+
+           check-service-text:
+                text is "Check service availability and pricing"
+                #color-scheme "#024731"
+                width 416px
+                height 32px
+                inside check-service-container 32px top
+                inside check-service-container 47px  left
+                inside check-service-container 139px bottom
+                inside check-service-container 677px  right
+
+           address-bar:
+                width 619px
+                height 16px
+                inside check-service-container 112px  top
+                inside check-service-container 63px left
+                inside check-service-container 75px  bottom
+                inside check-service-container 458px right
+
+           check-availability-button:
+                width 182px
+                height 48px
+                inside check-service-container 95px top
+                inside check-service-container 746px left
+                inside check-service-container 60px  bottom
+                inside check-service-container 212px right
+
